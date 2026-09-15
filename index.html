@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Wedding Of Aning &amp; Aminia</title>
+<meta name="description" content="Undangan Pernikahan Online Aning & Aminia" />
+<meta name="theme-color" content="#FDFBF6" />
+
+<!-- ====== GOOGLE FONTS (font elegan) ====== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- ====== FONT AWESOME (icon) ====== -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="is-locked">
+
+<!-- ==================================================================
+     FLOATING FLOWER / PETALS (animasi bunga melayang)
+     ================================================================== -->
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- ==================================================================
+     1. OPENING / COVER
+     ================================================================== -->
+<section class="cover" id="cover">
+
+  <!-- GANTI FOTO BACKGROUND COVER DI style.css -> .cover__bg -->
+  <div class="cover__bg" aria-hidden="true"></div>
+  <div class="cover__overlay" aria-hidden="true"></div>
+
+  <div class="cover__content">
+
+    <p class="cover__eyebrow">The Wedding Of</p>
+
+    <h1 class="cover__names">
+      Aning <span class="amp">&amp;</span> Aminia
+    </h1>
+
+    <!-- ====== GANTI TANGGAL PERNIKAHAN DI SINI ====== -->
+
+    <div class="ornament ornament--light" aria-hidden="true">
+      <span></span><i></i><span></span>
+    </div>
+
+    <div class="cover__guest">
+      <p class="cover__guest-label">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <!-- Nama tamu otomatis diambil dari URL: index.html?to=Nama+Tamu -->
+      <h2 class="cover__guest-name" id="guestName">Tamu Undangan</h2>
+    </div>
+
+    <button class="btn btn--gold" id="openBtn" type="button">
+      <i class="fa-solid fa-envelope-open-text"></i>
+      Buka Undangan
+    </button>
+
+  </div>
+</section>
+
+<!-- ==================================================================
+     SITE UTAMA
+     ================================================================== -->
+<div class="site" id="site">
+
+  <!-- ============ 2. HERO ============ -->
+  <header class="hero" id="home">
+    <!-- GANTI FOTO HERO DI style.css -> .hero__bg -->
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">We Are Getting Married</p>
+      <h1 class="hero__names">Aning <span class="amp">&amp;</span> Aminia</h1>
+
+      <div class="ornament ornament--light" aria-hidden="true">
+        <span></span><i></i><span></span>
+      </div>
+
+      <p class="hero__text">
+        Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud
+        menyelenggarakan acara pernikahan kami.
+      </p>
+
+      <a href="#couple" class="btn btn--outline">
+        <i class="fa-solid fa-chevron-down"></i> Lihat Undangan
+      </a>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main>
+
+    <!-- ============ 3. PROFIL PENGANTIN ============ -->
+    <section class="section" id="couple">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Mempelai</span>
+          <h2 class="section__title">Calon Pengantin</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <p class="lead reveal">
+          Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud
+          menyelenggarakan acara pernikahan kami.
+        </p>
+
+        <div class="couple-grid">
+
+          <!-- ===== PENGANTIN PRIA ===== -->
+          <article class="person reveal">
+            <div class="person__photo">
+              <!-- GANTI FOTO PENGANTIN PRIA -->
+              <img
+                src="aning.png"
+                alt="Foto Aning"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="person__name">Aning</h3>
+            <p class="person__role">Putra dari</p>
+            <!-- GANTI NAMA ORANG TUA PRIA -->
+            <p class="person__parents">Bapak Samsuri &amp; Ibu  Atih </p>
+          </article>
+
+          <div class="couple-amp reveal" aria-hidden="true">&amp;</div>
+
+          <!-- ===== PENGANTIN WANITA ===== -->
+          <article class="person reveal">
+            <div class="person__photo">
+              <!-- GANTI FOTO PENGANTIN WANITA -->
+              <img
+                src="ami.png"
+                alt="Foto Aminia"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="person__name">Aminia</h3>
+            <p class="person__role">Putri dari</p>
+            <!-- GANTI NAMA ORANG TUA WANITA -->
+            <p class="person__parents">Bapak Awam &amp; Ibu Manah </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. AYAT / QUOTE ============ -->
+    <section class="section section--quote" id="quote">
+      <div class="container">
+        <div class="quote-card reveal">
+          <i class="fa-solid fa-quote-left quote-card__icon" aria-hidden="true"></i>
+          <p class="quote-card__text">
+            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+            pasangan hidup dari jenismu sendiri supaya kamu merasa tenteram di
+            sampingnya.”
+          </p>
+          <span class="quote-card__source">QS. Ar-Rum : 21</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. DETAIL ACARA ============ -->
+    <section class="section" id="event">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Save The Date</span>
+          <h2 class="section__title">Detail Acara</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <div class="event-grid">
+
+          <!-- ===== AKAD NIKAH ===== -->
+          <article class="event-card glass reveal">
+            <div class="event-card__icon"><i class="fa-solid fa-ring"></i></div>
+            <h3 class="event-card__title">Akad Nikah</h3>
+            <div class="ornament ornament--sm" aria-hidden="true"><span></span><i></i><span></span></div>
+
+            <ul class="event-card__list">
+              <!-- GANTI TANGGAL AKAD -->
+              <li>
+                <i class="fa-regular fa-calendar-days"></i>
+                <span>Jumat, 09 Oktober 2026</span>
+              </li>
+              <!-- GANTI WAKTU AKAD -->
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                <span>08.00 WIB — Selesai</span>
+              </li>
+              <!-- GANTI LOKASI AKAD -->
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jln.Raya Cidikit <br />Kp.Cidikit Ds.Hariang Kec.Sobang</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. COUNTDOWN ============ -->
+    <section class="section section--countdown" id="countdown">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Menuju Hari Bahagia</span>
+          <h2 class="section__title">Hitung Mundur</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <div class="countdown reveal" id="countdownBox">
+          <div class="countdown__item glass">
+            <span class="countdown__num" id="cdDays">00</span>
+            <span class="countdown__label">Hari</span>
+          </div>
+          <div class="countdown__item glass">
+            <span class="countdown__num" id="cdHours">00</span>
+            <span class="countdown__label">Jam</span>
+          </div>
+          <div class="countdown__item glass">
+            <span class="countdown__num" id="cdMinutes">00</span>
+            <span class="countdown__label">Menit</span>
+          </div>
+          <div class="countdown__item glass">
+            <span class="countdown__num" id="cdSeconds">00</span>
+            <span class="countdown__label">Detik</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 7. LOKASI ACARA ============ -->
+    <section class="section" id="location">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Lokasi</span>
+          <h2 class="section__title">Peta Lokasi Acara</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <div class="map-wrap reveal">
+          <!-- GANTI URL GOOGLE MAPS: ubah bagian q= sesuai lokasi acara -->
+          <iframe
+            title="Lokasi Acara Pernikahan Aning & Aminia"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d283.6242977726201!2d106.28673951683892!3d-6.637959277720198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1789478528672!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="map-actions reveal">
+          <!-- GANTI LINK GOOGLE MAPS -->
+          <a
+            class="btn btn--gold"
+            href="https://maps.google.com/?q=Monumen+Nasional+Jakarta"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-map-location-dot"></i> Buka Google Maps
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 9. GALLERY ============ -->
+    <section class="section" id="gallery">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Momen</span>
+          <h2 class="section__title">Gallery</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <div class="gallery reveal" id="gallery-grid">
+
+          <!-- GANTI src (thumbnail) & data-full (versi besar) -->
+          <figure class="gallery__item tall wide" data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85">
+            <img src="wedding1.png" alt="Momen 1" loading="lazy" />
+          </figure>
+
+          <figure class="gallery__item" data-full="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1400&q=85">
+            <img src="boothaning.jpeg" alt="Momen 3" loading="lazy" />
+          </figure>
+
+          <figure class="gallery__item" data-full="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1400&q=85">
+            <img src="boothaning2.jpeg" alt="Momen 3" loading="lazy" />
+          </figure>
+
+           <figure class="gallery__item" data-full="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1400&q=85">
+            <img src="boothaning3.jpeg" alt="Momen 3" loading="lazy" />
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. WEDDING GIFT ============ -->
+    <section class="section section--gift" id="gift">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Tanda Kasih</span>
+          <h2 class="section__title">Wedding Gift</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <p class="lead reveal">
+          Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+          Namun apabila memberi merupakan ungkapan kasih Anda, Anda dapat
+          memberikan melalui:
+        </p>
+
+        <div class="gift-grid">
+
+          <!-- ===== REKENING 1 ===== -->
+          <article class="gift-card glass reveal">
+            <div class="gift-card__logo"><i class="fa-solid fa-building-columns"></i></div>
+            <p class="gift-card__bank">SEABANK</p>
+            <!-- GANTI NOMOR REKENING -->
+            <p class="gift-card__number" id="rek1">901697728902</p>
+            <!-- GANTI NAMA PEMILIK REKENING -->
+            <p class="gift-card__owner">Atas Nama: Aning</p>
+            <button class="btn btn--ghost btn--sm copy-btn" data-copy="1234567890" type="button">
+              <i class="fa-regular fa-copy"></i> Salin Nomor Rekening
+            </button>
+          </article>
+
+          <!-- ===== REKENING 2 ===== -->
+          <article class="gift-card glass reveal">
+            <div class="gift-card__logo"><i class="fa-solid fa-building-columns"></i></div>
+            <p class="gift-card__bank">DANA</p>
+            <!-- GANTI NOMOR REKENING -->
+            <p class="gift-card__number" id="rek2">085693192871</p>
+            <!-- GANTI NAMA PEMILIK REKENING -->
+            <p class="gift-card__owner">Atas Nama: Aminia</p>
+            <button class="btn btn--ghost btn--sm copy-btn" data-copy="9876543210" type="button">
+              <i class="fa-regular fa-copy"></i> Salin Nomor Rekening
+            </button>
+          </article>
+
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- ============ 11. RSVP ============ -->
+    <section class="section" id="rsvp">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Konfirmasi</span>
+          <h2 class="section__title">RSVP</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <p class="lead reveal">
+          Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i
+          berkenan hadir. Silakan konfirmasi kehadiran Anda.
+        </p>
+
+        <form class="rsvp-form glass reveal" id="rsvpForm" novalidate>
+
+          <div class="field">
+            <label for="rsvpName">Nama</label>
+            <input type="text" id="rsvpName" name="name" placeholder="Nama Anda" required />
+          </div>
+
+          <div class="field">
+            <label for="rsvpStatus">Status Kehadiran</label>
+            <select id="rsvpStatus" name="status" required>
+              <option value="hadir">Hadir</option>
+              <option value="tidak">Tidak Hadir</option>
+              <option value="ragu">Masih Ragu</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="rsvpGuests">Jumlah Tamu</label>
+            <input type="number" id="rsvpGuests" name="guests" min="1" max="10" value="1" />
+          </div>
+
+          <div class="field field--full">
+            <label for="rsvpMessage">Pesan / Ucapan</label>
+            <textarea id="rsvpMessage" name="message" rows="4" placeholder="Tuliskan doa &amp; ucapan terbaik Anda..."></textarea>
+          </div>
+
+          <div class="field field--full">
+            <button class="btn btn--gold btn--block" type="submit">
+              <i class="fa-regular fa-paper-plane"></i> Kirim Konfirmasi
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ 12. UCAPAN & DOA ============ -->
+    <section class="section section--wishes" id="wishes">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="eyebrow">Doa &amp; Ucapan</span>
+          <h2 class="section__title">Ucapan &amp; Doa</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+
+        <div class="wishes glass reveal" id="wishesList">
+          <!-- Daftar ucapan diisi otomatis oleh script.js -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 15. FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="ornament ornament--light" aria-hidden="true"><span></span><i></i><span></span></div>
+
+      <p class="footer__text">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+      </p>
+
+      <h2 class="footer__names">Aning &amp; Aminia</h2>
+      <p class="footer__thanks">Thank You</p>
+
+      <p class="footer__credit">
+         Made By Doni Hermawan (develover) 2026
+      </p>
+    </div>
+  </footer>
+
+</div><!-- /.site -->
+
+<!-- ==================================================================
+     14. FLOATING NAVIGATION (mobile)
+     ================================================================== -->
+<nav class="floatnav" id="floatnav" aria-label="Navigasi cepat">
+  <a href="#home"     class="floatnav__link is-active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="#couple"   class="floatnav__link"><i class="fa-solid fa-user-group"></i><span>Couple</span></a>
+  <a href="#event"    class="floatnav__link"><i class="fa-regular fa-calendar-check"></i><span>Event</span></a>
+  <a href="#gallery"  class="floatnav__link"><i class="fa-regular fa-images"></i><span>Gallery</span></a>
+  <a href="#gift"     class="floatnav__link"><i class="fa-solid fa-gift"></i><span>Gift</span></a>
+</nav>
+
+<!-- ==================================================================
+     13. BACKGROUND MUSIC
+     ================================================================== -->
+<button class="music-btn" id="musicBtn" type="button" aria-label="Putar / hentikan musik">
+  <i class="fa-solid fa-music" id="musicIcon"></i>
+</button>
+
+<!--
+  GANTI FILE MUSIK:
+  Letakkan file musik Anda di folder yang sama, misalnya "wedding-song.mp3",
+  lalu ubah src di bawah ini. Jika file tidak ditemukan, website otomatis
+  memutar alunan musik ambient lembut (Web Audio API) sebagai pengganti.
+-->
+<audio id="bgm" loop preload="auto">
+  <source src="wedding-song.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- ==================================================================
+     LIGHTBOX GALLERY
+     ================================================================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto">
+  <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Tutup">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Sebelumnya">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+  <img src="" alt="Foto pratinjau" id="lightboxImg" />
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Berikutnya">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+<!-- ==================================================================
+     TOAST NOTIFIKASI
+     ================================================================== -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toastText">Berhasil disalin!</span>
+</div>
+
+<!-- Scroll progress bar -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
