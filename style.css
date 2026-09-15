@@ -296,7 +296,7 @@ h1,h2,h3,p{ margin:0; }
 /* GANTI FOTO COVER: ubah url() di bawah */
 .cover__bg{
   position:absolute; inset:0;
-  background-image:url("preewed3.png");
+  background-image:url("preewed2.jpeg");
   background-size:cover;
   background-position:center;
   transform:scale(1.08);
